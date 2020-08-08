@@ -25,6 +25,7 @@ _.Zones =
 					["coord"] = { 87.6, 50.2, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 2059 },	-- A Dwarven Corpse
+					["sourceQuest"] = 26854,	-- The Lost Pilot
 					["g"] = {
 						i(57560),	-- Mangy Claw Mitts
 						i(57566),	-- Siege Engineer's Belt

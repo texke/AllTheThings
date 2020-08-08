@@ -331,7 +331,7 @@ _.Zones =
 					["provider"] = { "n", 240 },	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, 37 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 47,	-- Gold Dust Exchange
+					["sourceQuest"] = 62,	-- The Fargodeep Mine
 					["isBreadcrumb"] = true,
 				}),
 				q(7677,  {	-- White Stallion Exchange
