@@ -1346,6 +1346,7 @@ _.HiddenQuestTriggers =
 		q(43069),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 5 — during "Tracking the Tideskorn"
 		q(41858),	-- Monk Order Hall - No Monk Left Behind (obsolete or NYI version, triggers with #41852 version)
 		q(41873),	-- Monk Order Hall - The Mead Master (obsolete or NYI version, triggers with #41038 version)
+		q(46939),	-- Monk Order Hall - Monk Finale (Ban-Lu mount cutscene)
 
 		-- Paladin class campaign
 		q(38713),	-- The Crusade Calls. Triggered with An Urgent Gathering 38710
@@ -1820,6 +1821,7 @@ _.HiddenQuestTriggers =
 
 		--	VARIOUS
 		q(47703),	-- triggered while on #47631, "Rendezvous with the Libation"
+		q(50225),	-- first kill of Ogmot the Mad
 		q(50465),	-- triggered with #49950, "Blood Purification"
 		q(50419),	-- tracking quest from the 8.1.5 Blacksmithing questling ending with "Therazane's Choice"
 		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
@@ -1839,7 +1841,6 @@ _.HiddenQuestTriggers =
 		q(49766),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(48432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
-		q(58432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine" -- also triggered when looting the "Grimoire of the Other Side" as horde during "Spirits' belongings" -- also triggers when repairing the mirror by Charred Ramparts for the Venthyr mirror repair dailies...
 		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)
@@ -1882,7 +1883,7 @@ _.HiddenQuestTriggers =
 		q(58417),	-- triggered when starting the mission "Casting the Bait" while on "Under False Colors" during the Horde War Campaign
 		q(55135),	-- triggered after finishing the mission "Casting the Bait" during the Horde War Campaign
 		q(54854),	-- naming the ship "Tiffin's Melody" during Blessing of the Tides quest to recruit Kul Tirans
-
+		q(53964),	-- triggered when turning in #51445, "Thros, the Blighted Lands"
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
 		q(53532),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
@@ -1900,6 +1901,7 @@ _.HiddenQuestTriggers =
 		q(53546),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torcali". Makes the loa book available to read in The Great Seal
 		q(53547),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torga". Makes the loa book available to read in The Great Seal
 		q(53548),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Zandalar". Makes the loa book available to read in The Great Seal
+		q(54950),	-- when turning in "The Lord Admiral's Lament" and watching the Jaina cinematic
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
@@ -2468,6 +2470,7 @@ _.HiddenQuestTriggers =
 		q(55891),	-- Killed Herald of Salgos
 		q(56733),	-- First kill of Herald of Salgos
 		q(56484),	-- Killed Moghiea
+		q(56728),	-- killed Moghiea (first time)
 		q(56479),	-- Killed Omus
 		q(56722),	-- Killed Omus
 		q(56483),	-- Killed Ungormath
@@ -2496,11 +2499,15 @@ _.HiddenQuestTriggers =
 		q(56507),	-- Triggered randomly while in nazjatar
 		q(56658),	-- Triggered randomly while in Nazjatar
 		q(56670),	-- Triggered randomly while in Nazjatar
+		-- Akana
+		-- Inowari
 		-- Neri
 		q(56664),	-- "We need to be careful down here.  The locals are definitely not friendly."
 		q(56669),	-- "The tamed snapdragons aren't producing venom anymore. Our only way to harvest it is from the wild packs roaming here."
 		q(56679),	-- "One day, there will be no more shackles."
 		q(56680),	-- "It's hard to imagine what we'll do once we don't have to fight to survive.  I look forward to figuring that out."
+		-- Ori
+		q(57041),	-- "Change is inevitable.  Though she wielded powerful magic, Azshara could not hold back the tide.  Such will be her fate once more."
 		-- Poen
 		q(56544),	-- "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
 		q(56671),	-- "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
@@ -2578,7 +2585,6 @@ _.HiddenQuestTriggers =
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56881),	-- Triggered upon first entry into Nazjatar
 		q(57040),	-- Triggers when you select Vim Brineheart as your friend for the day
-		q(57041),	-- Triggers when you select Farseer Ori (alliance)/Neri Sharpfin (horde) as your friend for the day
 		q(57042),	-- Triggers when you select Poen Gillbrack as your friend for the day
 		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more (possibly bodyguard dialogue quest?)
 		q(56212),	-- Triggered when opening the first glimmering chest during "Scrying Stones"
@@ -3001,12 +3007,12 @@ _.HiddenQuestTriggers =
 		q(62153),	-- triggered when accepting #62277, "Ardenweald" for Threads of Fate
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
 		q(60826),	-- first use per day of Unbound Changeling trinket
-		
+
 		-- Illusions
 		q(63004),	-- triggered when learning Illusion: Devoted Spirit
 		q(62964),	-- triggered when learning Illusion: Undying Spirit
 		q(61727), 	-- triggered when learning Illusion: Sinsedge
-		
+
 		-- Adventures
 		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
 		q(63070),	-- Shared
@@ -3146,7 +3152,7 @@ _.HiddenQuestTriggers =
 		q(63318),	-- Necrolord
 		q(63316),	-- Night Fae
 		q(63319),	-- Venthyr
-		
+
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
 		q(61126),	-- Turning in the Twinklestar Gardening Tools during the Cache of the Moon sequence
@@ -3155,6 +3161,7 @@ _.HiddenQuestTriggers =
 		q(62945),	-- Triggered when looting Crafter's Basket for the Inscription: Hymnal of Reprise WQ
 		q(61208),	-- triggered for no reason when i was traveling to the area where the "Swarm Defense" WQ takes place in Ardenweald.  i just went into the area between the main bit of Ardenweald + the Tirna Scythe area and it was like "what's up"
 		q(63452),	-- Triggered when exceeding the rep needed for a Wild Hunt paragon box, but before turning in the quest for the paragon box
+					-- Also when reaching Renown 23, rep only at Honored with Wild Hunt
 		q(62941),	-- When opening the box containing Blacksmithing WQ supplies for 61435
 		-- Ardenweald Rares
 		q(62267),	-- Gormbore secondary quest
@@ -3192,7 +3199,7 @@ _.HiddenQuestTriggers =
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
 		q(61692),	-- \
 		q(61693),	--  \
-		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
+		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3
 		q(61695),	--  /
 		q(61696),	-- /
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
@@ -3207,7 +3214,7 @@ _.HiddenQuestTriggers =
 		q(62746),	-- Triggered when reaching Renown 19 ith World Quest reward increase
 		q(62446),	-- Triggered after restoring Falir the Shifting for A Rare and Unusual Spirit (62447)
 		q(62585),	-- Triggered after restoring Ohm of Meditation for A Rare and Unusual Spirit (62603)
-		
+
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
 		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
@@ -3321,7 +3328,7 @@ _.HiddenQuestTriggers =
 		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
 		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		q(62922),	-- triggered when turning in the Mixing a Mess WQ
-		
+
 		-- Maldraxxus Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
@@ -3344,6 +3351,8 @@ _.HiddenQuestTriggers =
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
 		q(60783),	-- triggered when turning in #60722, "Tower Power"/Completing Campaign: Promises of the Praetor
 		q(57577),	-- Triggered after recruiting Flytrap
+		q(57598),	-- Triggered after recruiting Gas Bag
+		q(57859),	-- Triggered after recruiting Guillotine
 		q(57578),	-- Triggered after recruiting Marz
 		q(57606),	-- Triggered after recruiting Roseboil
 		q(57854),	-- Triggered after recruiting Sabrina
@@ -3410,6 +3419,7 @@ _.HiddenQuestTriggers =
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
 		q(60583),	-- Tollkeeper Varaboss secondary quest
+		q(62455),	-- Amalgamation of Light secondary quest
 		-- Revendreth Treasures
 		q(60954),	-- secondary questID when looting Pugilist's Prize (35.8, 67.5 location only)
 		q(60851),	-- secondary questID when looting Secret Treasure (27.7, 48.7 location only)
@@ -3503,15 +3513,21 @@ _.HiddenQuestTriggers =
 		q(62516),	-- triggered when Ember Court ended, Week 4 (had Plague Deviser Marileth as guest and he was elated)
 		q(62498),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
 		q(62514),	-- triggered when Ember Court ended, Week 5 (had Grandmaster Vole as guest and he was elated)
+					-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62497),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62501),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62513),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62517),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62528),	-- triggered when Ember Court Ended, i give up on tracking weeks, but had Kleia+Pelagos and Cryptkeeper Kassir as guests and they were Elated.  no previous K+P/Cryptkeeper quests triggered
 		q(62523),	-- triggered when Ember Court Ended, had Kleia+Pelagos/Cryptkeeper Kassir as guests, both Elated, both hit Friend
+		q(62491),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
+		q(62495),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
+		q(62511),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(60319),	-- triggered when leaving Ember Court scenario, Week 2
 		q(59637),	-- triggered when leaving Ember Court scenario, Week 4
 		q(59636),	-- triggered when leaving Ember Court scenario, Week 5
+		q(59639),	-- triggered when leaving Ember Court (week 3)
+		q(59631),	-- triggered when leaving Ember Court (Honored) [Choofa/AlexMo/GMaster]
 		q(59634),	-- triggered upon actually leaving the Ember Court
 		q(59638),	-- triggered when using item #181536, "Guest List Page" — also triggered when leaving Ember Court (week 3 / week 6)
 		q(61389),	-- triggered when i rescinded Vole's invitation (the next guest in line was Kleia/Pelagos) - put here because 59638 above also triggered at the same time
@@ -3565,7 +3581,6 @@ _.HiddenQuestTriggers =
 		q(59502),	-- when choosing "Divine Desserts" as the refreshments for the week
 		q(59490),	-- when choosing "Glimpse of the Wilds" as the entertainment for the week
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
-		q(59639),	-- triggered when leaving Ember Court (week 3)
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
 		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
@@ -3584,12 +3599,14 @@ _.HiddenQuestTriggers =
 		q(59477),	-- when using "Contract: Mortal Reminders"
 		q(59474),	-- when selecting Traditional decorations for the Ember Court
 		q(59475),	-- when selecting Mortal Reminders decorations for the Ember Court
+		q(59406),	-- when using "RSVP: Choofa"
+		q(59407),	-- when using "RSVP: Choofa"
 		q(59409),	-- when using "RSVP: Cryptkeeper Kassir" — every time
 		q(59410),	-- when using "RSVP: Cryptkeeper Kassir" — first time only
 		q(59412),	-- when using "RSVP: Droman Aliothe"
 		q(59413),	-- when using "RSVP: Droman Aliothe"
-		q(59415),	-- when using "RSVP: Grandmaster Vole"
-		q(59416),	-- when using "RSVP: Grandmaster Vole"
+		q(59415),	-- when using "RSVP: Grandmaster Vole" - every time
+		q(59416),	-- when using "RSVP: Grandmaster Vole" - first time
 		q(59418),	-- when using "RSVP: Kleia and Pelagos" — every time
 		q(59419),	-- when using "RSVP: Kleia and Pelagos" — first time only
 		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124)
@@ -3602,6 +3619,8 @@ _.HiddenQuestTriggers =
 		q(59425),	-- when using "RSVP: Sika"
 		q(59618),	-- when using "RSVP: Stonehead"
 		q(59619),	-- when using "RSVP: Stonehead"
+		q(59394),	-- when using "RSVP: Alexandros Morgraine"
+		q(59395),	-- when using "RSVP: Alexandros Morgraine"
 		q(59633),	-- when using 'Guest List Page' (181537)
 		q(61505),	-- when using 'Guest List Page' (181537)
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
@@ -3622,7 +3641,6 @@ _.HiddenQuestTriggers =
 		q(59501),	-- using Contract: Mushroom Surprise
 		q(61499),	-- using Stock: Anima Samples
 		q(61502),	-- when using Invitation: Choofa
-		q(62656),	-- when using Invitation: Choofa
 		q(59487),	-- selecting Lost Chalice Band as the entertainment for the week
 		q(59499),	-- selecting Mushroom Surprise as the refreshment for the week
 		q(59517),	-- selecting Venthyr Volunteers as the security for the week
@@ -3642,16 +3660,18 @@ _.HiddenQuestTriggers =
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
 		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
 		q(63446),	-- triggered when landing in The Maw on 12/9/20
-		q(63178),	-- triggered when using the cypher while on "Rule 6: Concealment is Everything"
 		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
+		q(63178),	-- triggered when starting/accepting Hunt Gorged Shadehounds
 		q(63195),	-- triggered when starting/accepting Hunt Souleaters
+		q(63196),	-- triggered when starting/accepting Hunt Death Elementals
+		q(63197),	-- triggered when starting/accepting Hunt Winged Souleaters
 	--	q(63178),	-- triggered randomly in The Maw 12/16/20
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 					-- also for mogwai when killing Eketra...
 		q(63384),	-- triggered when killing Sanngror (in addition to 62210)
 
-		
+
 		-- Eye of the Jailer Levels
 		q(63382),	-- Mortars/Missiles (1)
 		q(63379),	-- Assassins (2)
@@ -3682,6 +3702,7 @@ _.HiddenQuestTriggers =
 		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
+		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
 		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
 		q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"
@@ -3695,7 +3716,7 @@ _.HiddenQuestTriggers =
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
 		q(62079),	-- triggered at the end of Mythic Tirna Scithe (+2)
-		
+
 		-- World Bosses
 		q(62810),	-- Mortanis kill questID
 		q(62812),	-- Nurgash Muckformed kill questID

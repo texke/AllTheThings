@@ -255,7 +255,7 @@ _.Zones =
 						}),
 						n(157312, {	-- Oily Invertebrate
 							["description"] = "Requires an equal portion of Red, Blue & Yellow slime.",
-							-- ["questID"] = ,
+							["questID"] = 61724,
 							["isDaily"] = true;
 							["g"] = {
 								crit(3, {	-- Oily Invertebrate
@@ -274,7 +274,7 @@ _.Zones =
 						}),
 						n(157310, {	-- Boneslurp
 							["description"] = "Requires an equal majority of Blue & Yellow slime.",
-							-- ["questID"] = ,
+							["questID"] = 61722,
 							["isDaily"] = true;
 							["g"] = {
 								crit(4, {	-- Boneslurp
@@ -297,7 +297,7 @@ _.Zones =
 						}),
 						n(157311, {	-- Burnblister
 							["description"] = "Requires an equal majority of Red & Yellow slime.",
-							-- ["questID"] = ,
+							["questID"] = 61723,
 							["isDaily"] = true;
 							["g"] = {
 								crit(6, {	-- Burnblister
@@ -460,7 +460,7 @@ _.Zones =
 					crit(9, {	-- Misplaced Supplies
 						["objectID"] = 351980,	-- Misplaced Supplies
 						["coord"] = { 62.4, 59.9, 1536 },
-						["questID"] = 59245,
+						["questID"] = 59245,	-- 60311 triggered for me on this treasure
 						["description"] = "On top of the mushroom.",
 					}),
 					crit(10, {	-- Glutharn's Stash

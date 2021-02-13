@@ -23,6 +23,9 @@ app.L = {
 
 	-- Big new chunk from AllTheThings.lua
 
+	["PROVIDERS"] = "Provider(s)";
+	["COLLECTION_PROGRESS"] = "Collection Progress";
+	["CONTAINS"] = "Contains:";
 	["FACTIONS"] = "Factions";
 	["COORDINATES_STRING"] = "Coordinates";
 	["FLIGHT_PATHS"] = "Flight Paths";
@@ -303,10 +306,10 @@ app.L = {
 	["FIRST_TIME_CHECKBOX_TOOLTIP"] = "Enable this option if you want to treat repeatable daily, weekly, yearly and world quests as collected if completed at least once, ignoring quest previously completed that has been reset.\n\nNOTE: Previously completed repeatable quest are only stored if you completed the quest with the addon active and that data will be lost if removed the addon data from WTF folder.";
 	["FILTER_THINGS_BY_LEVEL_CHECKBOX"] = "Filter Things By Level";
 	["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"] = "Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.";
-	["HIDE_BOE_CHECKBOX"] = "Hide BoE Items";
-	["HIDE_BOE_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to hide Bind on Equip items.\n\nThis setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
-	["IGNORE_FILTERS_FOR_BOES_CHECKBOX"] = "Ignore Filters for BoEs";
-	["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.";
+	["HIDE_BOE_CHECKBOX"] = "Hide BoE/BoA Items";
+	["HIDE_BOE_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to hide Bind-on-Equip/Account items.\n\nThis setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
+	["IGNORE_FILTERS_FOR_BOES_CHECKBOX"] = "Ignore Filters for BoE/BoA Items";
+	["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE/BoA items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.";
 	["EXPAND_DIFFICULTY_CHECKBOX"] = "Expand Current Difficulty";
 	["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
 	["WARN_DIFFICULTY_CHECKBOX"] = "Warn Completed Difficulty";
@@ -1102,6 +1105,7 @@ app.L = {
 		[-924] = "Interface\\Icons\\ui_sigil_necrolord",									-- Transport Network (Necrolord)
 		[-925] = "Interface\\Icons\\ui_sigil_necrolord",									-- Abomination Factory (Necrolord) Tier 1
 		[-926] = "Interface\\Icons\\ui_sigil_necrolord",									-- Abomination Factory (Necrolord) Tier 2
+		[-927] = "Interface\\Icons\\ui_sigil_necrolord",									-- Abomination Factory (Necrolord) Tier 3
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Covenant: Night Fae
 		[-930] = 136059,																	-- Queen's Conservatory
 		[-931] = 636334,																	-- Lesser Spirit
@@ -1991,6 +1995,7 @@ app.L = {
 		[-924] = "Transport Network",											-- Transport Network (Necrolord)
 		[-925] = "Tier 1: Build A Buddy",										-- Abomination Factory (Necrolord) Tier 1
 		[-926] = "Tier 2: Crafting Limbs",										-- Abomination Factory (Necrolord) Tier 2
+		[-927] = "Tier 3: Bring Them to Life",									-- Abomination Factory (Necrolord) Tier 3
 
 	-- SL Ardenweald/Night Fae
 		[-929] = "Covenant: Night Fae",											-- Covenant: Night Fae
@@ -2538,15 +2543,20 @@ app.L = {
 		[-1433950] = "Anima Crystal Shard",										-- Anima Crystal Shard
 
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
-		[-1433951] = "Broken Mirror",											-- Broken Mirror
-		[-1433952] = "Broken Mirror",											-- Broken Mirror
-		[-1433953] = "Broken Mirror",											-- Broken Mirror
-		[-1433954] = "Broken Mirror",											-- Broken Mirror
-		[-1433955] = "Broken Mirror",											-- Broken Mirror
-		[-1433956] = "Broken Mirror",											-- Broken Mirror
-		[-1433957] = "Broken Mirror",											-- Broken Mirror
-		[-1433958] = "Broken Mirror",											-- Broken Mirror
-		[-1433959] = "Broken Mirror",											-- Broken Mirror
+		[-1433951] = "Broken Mirror A-1",										-- Broken Mirror
+		[-1433952] = "Broken Mirror A-2",										-- Broken Mirror
+		[-1433953] = "Broken Mirror A-3",										-- Broken Mirror
+		[-1433954] = "Broken Mirror B-1",										-- Broken Mirror
+		[-1433955] = "Broken Mirror B-2",										-- Broken Mirror
+		[-1433956] = "Broken Mirror B-3",										-- Broken Mirror
+		[-1433957] = "Broken Mirror C-1",										-- Broken Mirror
+		[-1433958] = "Broken Mirror C-2",										-- Broken Mirror
+		[-1433959] = "Broken Mirror C-3",										-- Broken Mirror
+	};
+
+	-- Descriptions which are common to a common NPCID
+	["NPC_ID_DESCRIPTIONS"] = {
+		[-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
 	};
 
 	["OBJECT_ID_ICONS"] = {
@@ -4645,6 +4655,7 @@ app.L = {
 		[294319] = "Sandsunken Treasure",
 		[294335] = "Rotten Potato",
 		[294703] = "Grimmy's Rusty Lockbox",
+		[296479] = "Lord Admiral's Footlocker",
 		[296536] = "Bloodied Sentinel's Glaive",
 		[297825] = "Web-Covered Chest",
 		[297828] = "Merchant's Chest",
@@ -4784,7 +4795,7 @@ app.L = {
 		[351887] = "Wanted: Lord Darion",
 		[351888] = "Wanted: Summoner Marcelis",
 		[351889] = "Wanted: The Pale Doom",
-		[351948] = "Forgotten Chest",											-- C-?
+		[351948] = "Forgotten Chest",											-- C-2
 		[352027] = "Wanted Scroll",
 		[352028] = "Wanted Scroll",
 		[352086] = "Blackhound Cache",
@@ -4856,8 +4867,8 @@ app.L = {
 		[354193] = "Stoneborn Satchel",
 		[354211] = "Greed's Reward",
 		[355035] = "Treasure: House of the Chosen",								-- Chosen Runecoffer
-		[357228] = "Forgotten Chest",											-- C-?
-		[357229] = "Forgotten Chest",											-- C-?
+		[357228] = "Forgotten Chest",											-- C-3
+		[357229] = "Forgotten Chest",											-- C-1
 		[357230] = "Forgotten Chest",											-- B-1
 		[357231] = "Forgotten Chest",											-- B-2
 		[357232] = "Forgotten Chest",											-- B-3

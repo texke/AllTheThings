@@ -428,18 +428,25 @@ _.ExpansionFeatures =
 								i(128318),	-- Touch of the Void
 							}),
 							i(120301),	-- Armor Enhancement Token
+							i(118427),	-- Autographed Hearthstone Card
 							i(114128),	-- Balanced Weapon Enhancement
+							i(114806),	-- Blackrock Armor Set
 							i(114745),	-- Braced Armor Enhancement
 							i(123858),	-- Follower Retraining Scroll Case
 							i(118354),	-- Follower Retraining Certificate
 							i(114808),	-- Fortified Armor Enhancement
+							i(122583),	-- Grease Monkey Guide
 							i(114746),	-- Goredrenched Armor Set
 							i(114622),	-- Goredrenched Weaponry
+							i(118475),	-- Hearthstone Strategy Guide
 							i(114822),	-- Heavily Reinforced Armor Enhancement
 							i(128313),	-- Huge Ogre Cache
+							i(128315),	-- Medallion of the Legion
 							i(114131),	-- Power Overrun Weapon Enhancement
 							i(122594),	-- Rush Order: Tailoring Emporium
+							i(114616),	-- War Ravaged Weaponry
 							i(120302),	-- Weapon Enhancement Token
+							i(122584),	-- Winning with Wildlings
 						},
 					}),
 					n(94398, {	-- Fleet Command Table

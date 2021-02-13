@@ -170,15 +170,15 @@ namespace ATT
                     case 0:
                         switch (itemSubClass)
                         {
-                            case 00: return Filters.Consumable;    // Engineering Items (Explosives / Scopes) (Ignored!)
-                            case 01: return Filters.Consumable;    // Potions (Ignored!)
-                            case 02: return Filters.Consumable;    // Elixirs (Ignored!)
-                            case 03: return Filters.Consumable;    // Flask (Ignored!)
-                            case 05: return Filters.Consumable;    // Food (Ignored!)
-                            case 07: return Filters.Consumable;    // First Aid (Ignored!)
-                            case 08: return Filters.Consumable;    // Consumables (Artifact Power)
-                            case 09: return Filters.Consumable;    // Vantus Runes (Ignored!)
-                            default: return Filters.Consumable;
+                            case 00: return Filters.Ignored;    // Engineering Items (Explosives / Scopes) (Ignored!)
+                            case 01: return Filters.Ignored;    // Potions (Ignored!)
+                            case 02: return Filters.Ignored;    // Elixirs (Ignored!)
+                            case 03: return Filters.Ignored;    // Flask (Ignored!)
+                            case 05: return Filters.Ignored;    // Food (Ignored!)
+                            case 07: return Filters.Ignored;    // First Aid (Ignored!)
+                            case 08: return Filters.Ignored;    // Consumables (Artifact Power)
+                            case 09: return Filters.Ignored;    // Vantus Runes (Ignored!)
+                            default: return Filters.Ignored;
                         }
 
                     // Bags -- Note: This might be pretty cool to add.
@@ -1172,6 +1172,17 @@ namespace ATT
                 {
                     // Convert the old data to a list of objects.
                     oldList = oldData as List<object>;
+
+                    // a non-array item
+                    if (oldList == null)
+                    {
+                        // TODO: tons of spam due to 'lvl' right now... maybe re-introduce at a later time when all 'lvl is cleaned up
+                        //item[field] = oldList = new List<object>() { oldData };
+                        //Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(item));
+
+                        // Create a new list since the incoming data is bad
+                        item[field] = oldList = new List<object>();
+                    }
                 }
                 else
                 {
@@ -1740,8 +1751,8 @@ namespace ATT
                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                     if (costType == "i")
                     {
-                        int itemID = Convert.ToInt32(cost[1]);
-                        Items.MarkItemAsReferenced(itemID);
+                        // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
+                        Items.MarkItemAsReferenced(decimal.ToInt32(Convert.ToDecimal(cost[1])));
                     }
                 }
 

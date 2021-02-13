@@ -115,22 +115,10 @@ _.Zones =
 					},
 				}),
 				n(165419, {	-- Grand Marshal Mudrag
-					["coord"] = { 40.6, 46.8, 1699 },
+					["coord"] = { 40.6, 46.9, 1525 },
 					["g"] = {
-						i(183989),	-- Dredger Barrow Racer
-					},
-				}),
-				n(165453, {	-- Lady Ilinca <Court Concierge>
-					["coord"] = { 28.6, 41.0, 1525 },
-					["g"] =  {
-						i(176850, {	-- Blank Invitation
-							["cost"] = { { "c", 1820, 15 } },
-						}),
-						i(177234, {	-- Rally Bell
-							["cost"] = { { "c", 1813, 25 } },
-						}),
-						i(183876, {	-- Quill of Correspondence
-							["cost"] = 5000000,	-- 500g
+						i(183989, {	-- Dredger Barrow Racer
+							["cost"] = { { "c", 1820, 50 } },	-- 50x Infused Ruby
 						}),
 					},
 				}),
@@ -253,7 +241,7 @@ _.Zones =
 						}),
 						i(181799),	-- Extra Large Hat
 						i(182702, {	-- Phial of Black Muck Dye
-							["description"] = "Allows for repeatably dying the clothes of your Dredger Butler to Black.",
+							["description"] = "Allows for repeatably dyeing the clothes of your Dredger Butler to Black.",
 						}),
 					},
 				}),
